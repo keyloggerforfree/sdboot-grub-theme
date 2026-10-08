@@ -1,8 +1,8 @@
 # systemd-boot GRUB theme
 
-A GRUB theme that looks like the systemd-boot menu. It uses a black screen, a
-centred list of entries in the EFI firmware font, a thin divider and a
-`Boot in N s.` countdown underneath.
+A GRUB theme that looks like the systemd-boot menu.
+
+![The theme showing an Arch Linux entry and a "Boot in 5s." countdown](static/preview.png)
 
 ## Files
 
