@@ -1,0 +1,52 @@
+# systemd-boot look-alike theme for GRUB
+# Geometry measured from a 1024x768 systemd-boot screen; everything is
+# anchored to the screen centre so it stays centred at any resolution.
+
+title-text: ""
+desktop-color: "#000000"
+terminal-font: "Unifont Regular 16"
+
+# The boot entries
++ boot_menu {
+    left = 50%-144
+    top = 50%-38
+    width = 290
+    height = 57
+
+    item_font = "EFI Firmware Regular 19"
+    selected_item_font = "EFI Firmware Regular 19"
+    item_color = "#989898"
+    selected_item_color = "#000000"
+    selected_item_pixmap_style = "select_*.png"
+
+    item_height = 19
+    item_spacing = 0
+    item_padding = 0
+    icon_width = 0
+    icon_height = 0
+    item_icon_space = 0
+
+    scrollbar = false
+}
+
+# The thin divider under the menu
++ image {
+    left = 50%-168
+    top = 50%+28
+    width = 336
+    height = 1
+    file = "line.png"
+}
+
+# "Boot in N s." countdown
++ label {
+    id = "__timeout__"
+    left = 50%-48
+    top = 50%+38
+    width = 200
+    height = 19
+    align = "left"
+    font = "EFI Firmware Regular 19"
+    color = "#989898"
+    text = "Boot in %ds."
+}
